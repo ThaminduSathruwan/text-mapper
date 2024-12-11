@@ -29,11 +29,11 @@ const App = () => {
             <div className="flex-grow container mx-auto px-4 py-8 flex flex-col items-center">
                 <div className="bg-white rounded-lg shadow-md w-full max-w-2xl p-6">
           <textarea
-              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 text-base md:text-lg resize-none"
+              className="w-full p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-400 text-base md:text-lg resize-none text-transform uppercase"
               rows="6"
               placeholder="Type your text here..."
               value={input}
-              onChange={(e) => setInput(e.target.value)}
+              onChange={(e) => setInput(e.target.value.toUpperCase())}
           ></textarea>
                     <div className="mt-6 bg-gray-50 p-4 rounded border border-gray-300">
                         <h2 className="text-base md:text-lg font-medium text-gray-800 mb-2">Mapped Output:</h2>
